@@ -1,0 +1,15 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 109, 109);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: pokemon_solid-webfont;
+  src: url('./fonts/pokemon_solid-webfont.woff')
+}

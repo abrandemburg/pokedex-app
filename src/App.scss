@@ -1,0 +1,237 @@
+.App {
+    background-color: #272727;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:vh 1px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+header {
+    grid-area: header;       
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-family: pokemon_solid-webfont;
+    font-size: 4em;
+    color: rgb(255, 230, 0);
+    -webkit-text-stroke: 2px #2b8eff;
+}
+
+.evo-chain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    .evo-sprite {
+        width: 98px;
+        height: 98px;
+        border-radius: 2em;
+    }
+    
+    .main-sprite {
+        background-color: rgb(45, 204, 112); //type-color
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .info-specify {
+        background-color: rgb(126, 126, 126);
+        width: 100px;
+        min-height: 60px;
+        padding: 10px;
+        border-radius: 1em;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: rgb(233, 233, 233);
+        text-align: center;
+
+        .poke-name {
+            margin-bottom: 5px;
+        }
+
+        .measures {
+            margin-bottom: 8px;
+        }
+
+        .poke-type {
+            margin-bottom: 5px;
+
+            .poke-type-one {
+                background-color: rgb(26, 163, 26);
+                border-radius: 8px 8px 0 0;
+                border: 1px solid white;
+            }
+    
+            .poke-type-two {
+                background-color: rgb(102, 84, 204);
+                border-radius: 0 0 8px 8px;
+                border: 1px solid white;
+            }
+        }
+
+    }
+}
+
+.abilities {
+    background-color: rgb(45, 204, 112);
+
+    ul {
+        margin: 0;
+        padding: 3px;
+        text-align: center;
+        list-style: none;
+    }
+
+    div {
+        width: inherit;
+        padding: 3px;
+        background-color:  rgb(126, 126, 126);
+        text-align: center;
+        color: rgb(233, 233, 233);
+    }
+}
+
+.stats {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    margin-top: 10px;
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 5px 0 5px;
+    }
+
+    .stats-name {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .stats-bar {        
+        width: 230px;
+        margin-top: 0.1rem;
+        margin-bottom: 20px;
+
+        li {
+            height: 14px;
+            margin-bottom: .2rem;
+            border: 1px solid white;
+
+            > div {
+                height: 14px;
+            }
+        }
+    }
+
+    #hp {
+        width: 27%;
+        max-width: 230px;
+        display: block;
+        background-color: red;
+    }
+
+    #atk {
+        width: 33%;
+        max-width: 230px;
+        display: block;
+        background-color: red;
+    }
+
+    #def {
+        width: 33%;
+        max-width: 230px;
+        display: block;
+        background-color: red;
+    }
+
+    #spAtk {
+        width: 40%;
+        max-width: 230px;
+        display: block;
+        background-color: rgb(223, 127, 3);
+    }
+
+    #spDef {
+        width: 40%;
+        max-width: 230px;
+        display: block;
+        background-color: rgb(255, 145, 0);
+    }
+
+    #speed {
+        width: 27%;
+        max-width: 230px;
+        display: block;
+        background-color: red;
+    }
+
+
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+
+    > div {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    #moves {        
+        background-color: #D5CCC5;
+    }
+
+    #gameVersions {
+        background-color: #D5CCC5;
+    }
+}
+
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            list-style: none;
+            color: #D5CCC5;
+            padding: 0;
+
+            li {
+                margin: 5px;
+                padding: 10px;
+                background-color: #E57375;
+            }
+        }
+    }
+}
